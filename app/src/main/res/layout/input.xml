@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".InputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="백신접종정보"
+            android:textSize = "45dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/white"
+            android:background="@color/teal_200"
+            ></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:layout_weight="3"
+                    android:text="신상 정보"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sign"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    ></ImageView>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="2"
+                android:text="이름"
+                android:background="@drawable/back"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                />
+
+            <EditText
+                android:id="@+id/inputname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:enabled = "true"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="2"
+                android:text="생년월일"
+                android:background="@drawable/back"
+                android:textSize="22sp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/inputbirth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:hint="생년월일8자리\nex)20030101"
+                android:inputType="number"
+                android:ems="8"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="성별"
+                android:textSize="22sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/manbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text ="남자"
+                        android:textSize="20dp"
+                        android:background="@drawable/back"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/womanbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text ="여자"
+                        android:textSize="20dp"
+                        android:background="@drawable/back"/>
+                        </RadioGroup>
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                >
+">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="3"
+                android:text="백신 정보"
+                android:gravity="center_vertical"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vaccinealarm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:layout_weight="3.5"
+                    android:text="백신 접종일로부터\n _일 지났습니다."
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:textColor="@color/purple_500"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.3"
+                    android:padding ="5dp"
+                    android:src="@drawable/injection"
+                    ></ImageView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="2"
+                android:text="백신명"
+                android:background="@drawable/back"
+                android:textSize="22sp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/inputVname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:text=""
+                android:background="@drawable/back"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:hint="ex)모더나,화이자"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="2"
+                android:text="접종일"
+                android:background="@drawable/back"
+                android:textSize="22sp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/inputVdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text=""
+                android:background="@drawable/back"
+                android:textSize="22sp"
+                android:hint="접종일자8자리\nex)20211124"
+                android:inputType="number"
+                android:ems="8"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:text="접종차수"
+                android:background="@drawable/back"
+                android:textSize="22sp"
+                android:gravity="center_vertical"/>
+
+            <RadioGroup
+                android:id="@+id/Vcount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/firstbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text ="1차접종"
+                    android:textSize="20dp"
+                    android:background="@drawable/back"
+                    />
+
+                <RadioButton
+                    android:id="@+id/secondbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text ="2차접종완료"
+                    android:textSize="17dp"
+                    android:background="@drawable/back"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="확인"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#005599"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
